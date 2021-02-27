@@ -12,13 +12,12 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: 'eu-west-2'
+  region: 'eu-west-2'https://docs.travis-ci.com/user/encryption-keys
   app: 'docker'
   env: 'docker-env'
   bucket_name: ''elasticbeanstalk-eu-west-2-479228009421
   bucket_path: 'docker'
   on:
     branch: master
-    access_key_id: $AWS-Access-Key
-    secret_access_key:
-      secure: $AWS-Access-Secret
+    access_key_id: "AKIAW7FBXDPGT5E7ZT2Y"
+    secret_access_key: "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"
